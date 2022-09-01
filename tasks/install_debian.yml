@@ -1,0 +1,13 @@
+---
+# tasks file for dive | Debian/Ubuntu Family
+
+- name: Debian/Ubuntu Family | Downloading and extracting {{ dive_app }} {{ dive_version }}
+  ansible.builtin.unarchive:
+    src: "{{ dive_dl_url }}"
+    dest: "{{ dive_bin_path }}"
+    extra_opts:
+      - dive
+    remote_src: yes
+    owner: "{{ dive_file_owner }}"
+    group: "{{ dive_file_group }}"
+    mode: "{{ dive_file_permission_mode }}"
