@@ -1,0 +1,12 @@
+---
+# defaults file for dive
+
+dive_app: dive
+dive_version: 0.10.0
+dive_os: linux
+dive_arch: amd64
+dive_dl_url: https://github.com/wagoodman/{{ dive_app }}/releases/download/v{{ dive_version }}/{{ dive_app }}_{{ dive_version }}_{{ dive_os }}_{{ dive_arch }}.tar.gz
+dive_bin_path: /usr/local/bin
+dive_file_owner: root
+dive_file_group: root
+dive_file_permission_mode: '0755'
