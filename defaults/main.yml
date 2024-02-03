@@ -2,7 +2,7 @@
 # defaults file for dive
 
 dive_app: dive
-dive_version: 0.11.0
+dive_version: 0.12.0
 dive_os: linux
 dive_arch: amd64
 dive_dl_url: https://github.com/wagoodman/{{ dive_app }}/releases/download/v{{ dive_version }}/{{ dive_app }}_{{ dive_version }}_{{ dive_os }}_{{ dive_arch }}.tar.gz
