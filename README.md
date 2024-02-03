@@ -16,7 +16,7 @@ Available variables are listed below (located in `defaults/main.yml`):
 
 ```yaml
 dive_app: dive
-dive_version: 0.11.0
+dive_version: 0.12.0
 dive_os: linux
 dive_arch: amd64
 dive_dl_url: https://github.com/wagoodman/{{ dive_app }}/releases/download/v{{ dive_version }}/{{ dive_app }}_{{ dive_version }}_{{ dive_os }}_{{ dive_arch }}.tar.gz
@@ -31,7 +31,7 @@ dive_file_permission_mode: '0755'
 Variable                  | Description
 ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------
 dive_app                  | Defines the app to install i.e. **dive**
-dive_version              | Defined to dynamically fetch the desired version to install. Defaults to: **0.11.0**
+dive_version              | Defined to dynamically fetch the desired version to install. Defaults to: **0.12.0**
 dive_os                   | Defines os type. Defaults to: **linux**
 dive_arch                 | Defines os architecture. Defaults to: **amd64**
 dive_dl_url               | Defines URL to download the dive binary from.
